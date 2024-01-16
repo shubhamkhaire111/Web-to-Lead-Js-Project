@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web to Lead Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Create Lead</h1>
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h000004FC1L" method="POST" onsubmit="formSubmit()">
+  
+  <input type=hidden name="oid" value="00D5h000004FC1L">
+  <input type=hidden name="retURL" value="https://trailhead.salesforce.com/content/learn/modules/lex_dev_visualforce">
+
+  <input type=hidden name="Date__c" class="outputDate">
+  
+  <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required /><br>
+  
+  <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br>
+  
+  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required /><br>
+
+  <label for="date">Date</label>
+  <input type="date" class="inputDate" required>
+  
+  <!-- Date:<span class="dateInput dateOnlyInput"><input  id="00N5h00000KYNTI" name="00N5h00000KYNTI" size="12" type="text" /></span><br> -->
+  
+  <input type="submit" name="submit" class="submit">
+  
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+</html>
